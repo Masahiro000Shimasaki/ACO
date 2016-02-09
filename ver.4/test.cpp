@@ -26,7 +26,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
   }
 
   int sound_handle;
-  sound_handle = LoadSoundMem("a.mp3");
+  sound_handle = LoadSoundMem("音楽ファイル");
   PlaySoundMem(sound_handle, DX_PLAYTYPE_LOOP);
 
 
@@ -49,7 +49,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
   sceneMgr.Finalize();
 
-  /*
+  
   Field field;
   Field *p_field = &field;
   field.SetColony(50, 50);
@@ -85,7 +85,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
       DrawPixel(i, j, GetColor(field.GetPheromoneQuality(i, j), 0, 0));
     }
   }
-  */
+  
 
   //  終了処理
   DxLib_End();
