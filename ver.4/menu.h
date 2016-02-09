@@ -11,7 +11,7 @@ const static int SEL3_Y = 280;
 
 static int NowSelect = eScene_Game;
 
-//  ƒƒjƒ…[‰æ–ÊƒNƒ‰ƒX
+//  ãƒ¡ãƒ‹ãƒ¥ãƒ¼ç”»é¢ã‚¯ãƒ©ã‚¹
 class Menu : public BaseScene
 {
   public:
@@ -26,13 +26,13 @@ Menu::Menu(ISceneChanger *changer) : BaseScene(changer)
 {
 }
 
-//  ‰Šú‰»
+//  åˆæœŸåŒ–
 void Menu::Initialize()
 {
   mImageHandle = LoadGraph("menu.png");
 }
 
-//  XV
+//  æ›´æ–°
 void Menu::Update()
 {
   if(Keyboard_Get(KEY_INPUT_DOWN) == 1) NowSelect = (NowSelect+1) % 3;
@@ -55,14 +55,14 @@ void Menu::Update()
   }
 }
 
-//  •`‰æ
+//  æç”»
 void Menu::Draw()
 {
   BaseScene::Draw();
-  DrawString(50, 200, "€–Ú‚ğ‘I‘ğ‚µ‚ÄƒGƒ“ƒ^[ƒL[‚ğ‰Ÿ‚µ‚Ä‚Ë", GetColor(0, 0, 0));
-  DrawString(80, SEL1_Y, "ƒƒ“ƒo[\¬", GetColor(0, 0, 0));
-  DrawString(80, SEL2_Y, "Œ¤‹†“à—e", GetColor(0, 0, 0));
-  DrawString(80, SEL3_Y, "‚¨‚Ü‚¯", GetColor(0, 0, 0));
+  DrawString(50, 200, "æç”»ã—ãŸã„å†…å®¹ã‚’è¨˜è¿°ã—ã¦ãã ã•ã„", GetColor(0, 0, 0));
+  DrawString(80, SEL1_Y, "Enterã‚­ãƒ¼ã‚’æŠ¼ã™ã¨ç”»é¢ãŒå¤‰ã‚ã‚Šã¾ã™", GetColor(0, 0, 0));
+  DrawString(80, SEL2_Y, "Enterã‚­ãƒ¼ã‚’æŠ¼ã™ã¨ç”»é¢ãŒå¤‰ã‚ã‚Šã¾ã™", GetColor(0, 0, 0));
+  DrawString(80, SEL3_Y, "Enterã‚­ãƒ¼ã‚’æŠ¼ã™ã¨ç”»é¢ãŒå¤‰ã‚ã‚Šã¾ã™", GetColor(0, 0, 0));
   int y = 0;
   switch(NowSelect)
   {
@@ -76,7 +76,7 @@ void Menu::Draw()
       y = SEL3_Y;
       break;
   }
-  DrawString(60, y, "š", GetColor(255, 0, 0));
+  DrawString(60, y, "ã‚¢ã‚¤ã‚³ãƒ³ï¼Ÿã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®è¨˜è¿°", GetColor(255, 0, 0));
 }
 
 
