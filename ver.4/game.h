@@ -17,13 +17,13 @@ class Game : public BaseScene
 Game::Game(ISceneChanger *changer) : BaseScene(changer)
 {}
 
-//  ‰Šú‰»
+//  åˆæœŸåŒ–
 void Game::Initialize()
 {
   //mImageHandle = LoadGraph("report.png");
 }
 
-//  XV
+//  æ›´æ–°
 void Game::Update()
 {
   if(CheckHitKey(KEY_INPUT_ESCAPE) != 0)
@@ -32,17 +32,12 @@ void Game::Update()
   }
 }
 
-//  •`‰æ
+//  æç”»
 void Game::Draw()
 {
   BaseScene::Draw();
-  DrawString( 0,   5, "EscƒL[‚ğ‰Ÿ‚·‚Æƒƒjƒ…[‚É–ß‚é", GetColor(255, 255, 255));
-  DrawString(20,  45, "ƒƒ“ƒo[F", GetColor(255, 255, 255));
-  DrawString(40,  65, "‹³Š¯@@@@@ F¯–ì@F‘", GetColor(255, 255, 255));
-  DrawString(40,  85, "”m‰Û’ö (SSP) FO’J@Œc‘¾Cl‹{@—F‹MCDang Tuan Linh", GetColor(255, 255, 255));
-  DrawString(40, 105, "Cm2”N @@ @F‹v–V@«”V", GetColor(255, 255, 255));
-  DrawString(40, 125, "Cm1”N @@ @F“‡è@mGCˆÀ‰ª@—D“l", GetColor(255, 255, 255));
-  DrawString(40, 145, "Šw•”4”N @@ @F¼“c@ˆêWCR–{@’B–ç", GetColor(255, 255, 255));
+  DrawString( 0,   5, "æç”»ã—ãŸã„å†…å®¹ã‚’è¨˜è¿°ã—ã¦ãã ã•ã„", GetColor(255, 255, 255));
+  DrawString(20,  45, "ESCã‚­ãƒ¼ã‚’æŠ¼ã™ã¨ç”»é¢ãŒå¤‰ã‚ã‚Šã¾ã™", GetColor(255, 255, 255));
 }
 
 #endif
