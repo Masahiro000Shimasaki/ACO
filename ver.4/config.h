@@ -38,11 +38,10 @@ void Config::Update()
 void Config::Draw()
 {
   BaseScene::Draw();
-  DrawString(0 ,   5, "Escキーを押すとメニューに戻る", GetColor(255, 255, 255));
-  DrawString(20,  45, "研究内容：", GetColor(255, 255, 255));
-  DrawString(35,  65, "> FPGAを用いた画像処理システムのハードウェア化", GetColor(255, 255, 255));
-  DrawString(35,  85, "> 画像のクラスタリング，識別器の学習", GetColor(255, 255, 255));
-  DrawString(35, 105, "> MRI，NIRSを用いた解析・計測", GetColor(255, 255, 255));
+  DrawString(20,  45, "描画したい内容を記述してください", GetColor(255, 255, 255));
+  DrawString(35,  65, "> 描画したい内容を記述してください", GetColor(255, 255, 255));
+  DrawString(35,  85, "> 描画したい内容を記述してください", GetColor(255, 255, 255));
+  DrawString(35, 105, "> 描画したい内容を記述してください", GetColor(255, 255, 255));
 }
 
 #endif
